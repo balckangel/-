@@ -1,0 +1,87 @@
+<?php include APPLICATION_PATH."application/views/header.phtml" ?>
+<div id="banner">
+    <div style="background-image:url(/img/060banner.jpg)" class="banner"></div>
+</div>
+<section id="sub060" class="bb">
+    <div class="heading s5">
+        <h2>媒体报道<small>MEDIA CENTER</small></h2>
+        <div class="line"></div>
+    </div>
+    <div class="space30"></div>
+    <div class="container">
+        <div class="sub060-nav">
+            <ul>
+                <li class="active"><a href="#">媒体报道</a></li>
+                <li><a href="#">公司动态</a></li>
+                <li><a href="#">行业动态</a></li>
+            </ul>
+        </div>
+        <div class="sub060 row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                <div class="sub060-slide have-dots">
+                    <div class="item">
+                        <div class="img zoom"><a href="#"><img src="/img/060pic.jpg"/></a></div>
+                        <h3><a href="#">法国外交与国际发展部部长：减排</a></h3>
+                    </div>
+                    <div class="item">
+                        <div class="img zoom"><a href="#"><img src="/img/060pic.jpg"/></a></div>
+                        <h3><a href="#">法国外交与国际发展部部长：减排</a></h3>
+                    </div>
+                    <div class="item">
+                        <div class="img zoom"><a href="#"><img src="/img/060pic.jpg"/></a></div>
+                        <h3><a href="#">法国外交与国际发展部部长：减排</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                <div class="mc-item">
+                    <h3><a href="#">事关地方优惠存废 150天税变</a></h3>
+                    <p class="el">经济观察报 记者 杜涛 实习记者 常博 同样是关乎税收优惠，半年之内，主管部门的口径从“62号文”切换到“25号文”，这令吴鹏乍惊又喜。吴鹏是一家房地产公司的财务总监，当他第一眼看到“25号文”时，一脸兴奋...</p>
+                </div>
+                <div class="mc-item">
+                    <h3><a href="#">事关地方优惠存废 150天税变</a></h3>
+                    <p class="el">经济观察报 记者 杜涛 实习记者 常博 同样是关乎税收优惠，半年之内，主管部门的口径从“62号文”切换到“25号文”，这令吴鹏乍惊又喜。吴鹏是一家房地产公司的财务总监，当他第一眼看到“25号文”时，一脸兴奋...</p>
+                </div>
+                <div class="mc-item">
+                    <h3><a href="#">事关地方优惠存废 150天税变</a></h3>
+                    <p class="el">经济观察报 记者 杜涛 实习记者 常博 同样是关乎税收优惠，半年之内，主管部门的口径从“62号文”切换到“25号文”，这令吴鹏乍惊又喜。吴鹏是一家房地产公司的财务总监，当他第一眼看到“25号文”时，一脸兴奋...</p>
+                </div>
+                <div class="mc-item">
+                    <h3><a href="#">事关地方优惠存废 150天税变</a></h3>
+                    <p class="el">经济观察报 记者 杜涛 实习记者 常博 同样是关乎税收优惠，半年之内，主管部门的口径从“62号文”切换到“25号文”，这令吴鹏乍惊又喜。吴鹏是一家房地产公司的财务总监，当他第一眼看到“25号文”时，一脸兴奋...</p>
+                </div>
+            </div>
+            <div class="page s3">
+                <ul>
+                    <li class="first"><a href="#">首页</a></li>
+                    <li class="prev"><a href="#">上一页</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">下一页</a></li>
+                    <li class="last"><a href="#">末页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<?php include APPLICATION_PATH.'/application/views/footer.phtml'?>
+<script>
+    $(document).ready(function(){
+        $('.sub060-slide').owlCarousel({
+            dots: true,
+            nav: false,
+            items: 1,
+            smartSpeed: 650,
+        });
+        $('.el').dotdotdot({
+            ellipsis: '. . . ',
+            watch: "window",
+            wrap: 'letter',
+        });
+    })
+</script>
+</body>
+</html>

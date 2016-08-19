@@ -1,0 +1,97 @@
+<?php include APPLICATION_PATH.'/application/views/header.phtml'?>
+<div id="banner">
+    <div style="background-image:url(/img/050banner.jpg)" class="banner"></div>
+</div>
+<section id="sub050" class="bb">
+    <div class="container">
+        <div class="circle-content">
+            <div class="circle-box">
+                <div id="parallax" class="parallax-viewport">
+                    <div id="layer1" class="parallax-layer">
+                        <div class="circle-contain">
+                            <div id="item1" class="circle-item"><a href="051.html" data-fancybox-type="iframe" class="over fancy"><span>志趣相投</span></a>
+                                <div class="img"><img src="/img/010club1.jpg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="layer2" class="parallax-layer">
+                        <div class="circle-contain">
+                            <div id="item2" class="circle-item"><a href="051.html" data-fancybox-type="iframe" class="over fancy"><span>志趣相投</span></a>
+                                <div class="img"><img src="/img/010club2.jpg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="layer3" class="parallax-layer">
+                        <div class="circle-contain">
+                            <div id="item3" class="circle-item"><a href="051.html" data-fancybox-type="iframe" class="over fancy"><span>志趣相投</span></a>
+                                <div class="img"><img src="/img/010club3.jpg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="layer4" class="parallax-layer">
+                        <div class="circle-contain">
+                            <div id="item4" class="circle-item"><a href="051.html" data-fancybox-type="iframe" class="over fancy"><span>志趣相投</span></a>
+                                <div class="img"><img src="/img/010club4.jpg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="layer5" class="parallax-layer">
+                        <div class="circle-contain">
+                            <div id="item5" class="circle-item"><a href="051.html" data-fancybox-type="iframe" class="over fancy"><span>志趣相投</span></a>
+                                <div class="img"><img src="/img/010club5.jpg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="layer6" class="parallax-layer">
+                        <div class="circle-contain">
+                            <div id="more" class="circle-item"><a href="#" class="over"><span>我要加入 <i class="fa fa-angle-double-right"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php include APPLICATION_PATH.'/application/views/footer.phtml'?>
+<script src="/js/jquery.event.frame.js"></script>
+<script src="/js/jquery.parallax.js"></script>
+<script>
+    $(document).ready(function(){
+        if($(window).width() > 768){
+            $('#parallax .parallax-layer').parallax({
+                mouseport: $('#parallax')
+            });
+        }
+        if($(window).width() > 768){
+            $(".fancy").fancybox({
+                padding: 0,
+                width: '100%',
+                height: '100%',
+                maxWidth: 900,
+                maxHeight: 400,
+                fitToView : false,
+                autoSize : false,
+                openEffect : 'none',
+                closeEffect : 'none',
+                scrolling: 'no',
+                iframe: {scrolling : 'no'},
+            })
+        }else{
+            $(".fancy").fancybox({
+                padding: 0,
+                width: '100%',
+                height: '100%',
+                maxWidth: 900,
+                maxHeight: 800,
+                fitToView : false,
+                autoSize : false,
+                openEffect : 'none',
+                closeEffect : 'none',
+                scrolling: 'no',
+                iframe: {scrolling : 'no'},
+            })
+        }
+    })
+</script>
+</body>
+</html>
